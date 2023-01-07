@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    background: #110a14;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.card{
+    position: relative;
+    border-top: 1px solid;
+    border-left:1px solid;
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    border-radius: 20px;
+    width: 222px;
+    height: 300px;
+   
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    border-bottom:1px solid;
+    border-bottom-left-radius:inherit;
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    
+    bottom: 0;
+    left: 0px;
+    width: 150px;
+    height: 300px;
+    
+    
+}
+.card::before{
+    content: "";
+    position: absolute;
+    border-top: 1px solid;
+    border-top-left-radius:inherit;
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+   
+    top: -42px;
+    left: -36px;
+    transform: rotate(90deg);
+    width: 216px;
+    height: 300px;
+    
+    
+}
+.inner-card{
+    position: absolute;
+    border-top: 1px solid;
+    width: 111px;
+    height: 300px;
+    top: 11px;
+    bottom: 0px;
+    left:15px;
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    
+    transform: rotate(130deg);
+    
+    
+}
+
+
+
+
